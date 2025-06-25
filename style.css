@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Michroma", sans-serif;
+    background: url(img/download\ \(1\).jpeg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1{
+    text-align: right;
+    color: #fff;
+    margin-top: 10%;
+    margin-right: 15%;
+}
+p{
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+nav ul{
+    text-decoration: none;
+    display: flex;
+}
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: background-color 0.3s ease;
+}
+nav li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+/* From Uiverse.io by vinodjangid07 */ 
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 70%;
+  margin-top: 10px;
+  padding: 5px 15px;
+  background-color: #006aff;
+  border: 8px solid #c0dfff;
+  color: white;
+  gap: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.text {
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.svg {
+  padding-top: 5px;
+  height: 100%;
+  width: fit-content;
+}
+.svg svg {
+  width: 30px;
+  height: 30px;
+}
+.button:hover {
+  border: 8px solid #b1d8ff;
+  background-color: #1b7aff;
+}
+.button:active {
+  border: 5px solid #c0dfff;
+}
+.button:hover .svg svg {
+  animation: jello-vertical 0.9s both;
+  transform-origin: left;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+ /* From Uiverse.io by Sharkotech */ 
+.card {
+  width: 190px;
+  height: 254px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  margin-left: -35%;
+  margin-top: -70%;
+  border-radius: 10px;
+}
+
+.card img{
+  width: 190px;
+  height: 254px;
+  background: rgba(211, 211, 211, 0.199);
+  position: absolute;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#c1 {
+  transform: translateX(-100px) rotate(-40deg);
+}
+
+#c2 {
+  transform: translateX(-50px) rotate(-30deg);
+}
+
+#c3 {
+   transform: translateX(0) rotate(-20deg);
+}
+
+#c4 {
+  transform: translateX(50px) rotate(-10deg);
+}
+
+#c1:hover {
+  transform: translateX(-150px) rotate(0deg) !important;
+}
+
+#c2:hover {
+  transform: translateX(-100px) rotate(0deg) !important;
+}
+
+#c3:hover {
+  transform: translateX(-50px) rotate(0deg) !important;
+}
+
+#c4:hover {
+  transform: translateX(50px) rotate(0deg) !important;
+}
+
+.main {
+  display: grid;
+  height: 50vmax;
+  place-items: center;
+}
