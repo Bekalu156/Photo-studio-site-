@@ -344,9 +344,6 @@ button {
   margin-left: 13%;
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
-    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
-    display: flex;
 }
 
 .cards {
@@ -362,11 +359,9 @@ button {
   flex-direction: column;
   text-align: center;
   color: #ffffff;
-  overflow: hidden;
   padding: 20px;
   cursor: pointer;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
-    rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+ 
 }
 
 .cards img {
@@ -378,6 +373,8 @@ button {
   top: 0;
   left: 0;
   z-index: -1;
+  transition: transform 0.3s ease;
+  background:  url(img/Enchanting\ Beach\ Weddings_\ Ideas\ To\ Make\ Your\ Special\ Day\ Unforgettable.jpeg); ;
 }
 
 .cards .h4 {
@@ -1124,8 +1121,8 @@ footer .social-icons a {
   display: none;
 }
 
-@media (max-width: 768px) {
-    body {
+@media (max-width: 599px){
+   body {
         font-size: 14px;
     }
     h1{
@@ -1423,3 +1420,324 @@ nav li {
   margin-top: 60px;
  }
 }
+
+@media (min-width: 600px) and (max-width: 1023px){
+    body {
+          font-size: 16px;
+      }
+      h1{
+          margin-left: 12%;
+          margin-top: 60%;
+          width: 70vh;
+          text-align: center;
+          font-size: 25px;
+      }
+      p{
+        margin-left: 12%;
+        text-align: center;
+        width: 70vh;
+        font-size: 18px;
+      }
+      .logo{
+        color: #000;
+        margin-right: 30px;
+        font-size: 24px;
+      }
+      nav {
+      position: absolute;
+      top: 90px; /* adjust based on your header or logo height */
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+}
+    nav ul {
+      flex-direction: column;
+      margin-left: -240px;
+      margin-top: -130px;
+      border-radius: 10px;
+      display: none;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 10px 0;
+      width: 60%;
+      height: 100vh;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+}
+
+
+nav li {
+  margin: 20px 0;
+}
+    .slider{
+      display: flex;
+      padding-top: 50px;
+      margin-left: 30%;
+      font-size: 30px;
+      cursor: pointer;
+    }
+
+    .slider h2{
+      margin-top: -10px;
+      margin-left: -80px;
+    }
+
+    .slider i {
+        margin-left: 50%;
+        display: block;
+        margin-top: -8px;
+        font-size: 28px;
+        color: #fff;
+        transition: color 0.3s ease;    
+    }
+    
+    .slider i:hover {
+        color: #1b7aff;
+        transform:  scale(1.1);
+    }
+      .main{
+          height: 80vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: -80%;
+          margin-left: 50%;
+      }
+      
+      .card{
+        width: 160px;
+        height: 210px;
+      }
+      .card img{
+        width: 160px;
+        height: 210px;
+      }
+      .logo {
+          margin-top: 10px;
+      }
+      .button {
+          margin-left: 35%;
+          margin-top: 20px;
+          padding: 3px 8px;
+          font-size: 12px;
+      }
+      .about, .portfolio, .contact, .Address {
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: 35%;
+      }
+      .services h1, .portfolio h1, .contact h1, .Address h3 {
+            text-align: center;
+            margin-left: 0;
+        }
+        
+        .about h1{
+            margin-left: -45px;
+            font-size: 27px;
+            margin-top: 20px;
+        }
+          
+        .about p{
+            text-align: center;
+            font-size: 16px;
+            margin-left: 0;
+            width: 90%;
+        }
+        .loader{
+            margin-left: 30%;
+            margin-top: -10%;     
+        }
+        .services h1{
+            margin-left: -20px;
+            font-size: 27px;
+        } 
+        .service-cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 0 10px;
+        }
+        .service .cards img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .services p{
+            font-size: 16px;
+            margin-left: 10px;
+            width: 90%;
+        }
+        .services .cardBox {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .services .cards{
+          width: 170%;
+          height: 170%;
+          margin-left: 50px;
+        }
+        .services .cards img{
+            width: 170%;
+            height: 170%;
+            border-radius: 20px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+            
+        .services .cards2{
+            margin-left: 10px;
+            margin-top: 70%;
+            width: 60%;
+            height: 50%;
+        }
+
+        .services .cards3{
+            margin-left: 10px;
+            margin-top: 130%;
+            width: 60%;
+            height: 50%;
+        }
+        .services .cards4{
+            margin-left: 10px;
+            margin-top: 190%;
+            width: 60%;
+            height: 50%;
+        }
+
+        .portfolio{
+          margin-top: 220%;
+          width: 105%;
+          margin-left: -10px;
+        }
+
+        .portfolio h1{
+            text-align: center;
+            margin-left: -55px;
+            font-size: 27px;
+        }
+        .portfolio p{
+            text-align: center;
+            font-size: 16px;
+            margin-left: 0;
+            width: 90%;
+        }
+        .contact form input,
+        .contact form textarea {
+            width: 70%;
+            padding: 10px;
+            margin: 10px auto;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .contact form button {
+            width: 30%;
+            padding: 8px 10px;
+            margin: 10px auto;
+            background-color: #006aff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact form button:hover {
+            background-color: #0056b3;
+        }
+        .contact h1 {
+            margin-left: -60px;
+            font-size: 25px;
+        }
+        .contact p {
+            font-size: 16px;
+            margin-left: 0;
+            width: 110%;
+        }
+        .contact iframe {
+            width: 150%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        .contact .all{
+          display: flex;
+          margin-left: 50px;
+          margin-top: 20%;
+        }
+        .contact-img {
+            display: none;
+        }
+
+        .contact .fa-location-dot {
+            color: #1b7aff;
+            font-size: 25px;
+            margin-left: 30%;
+        }
+        .contact .fa-phone {
+            color: #1b7aff;
+            font-size: 25px;
+            margin-left: 30%;
+        }
+        .contact .fa-envelope {
+            color: #1b7aff;
+            font-size: 25px;
+            margin-left: 30%;
+        }
+        footer{
+            width: 100%;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            margin-top: 20px;
+          
+        }
+      .footer h1 {
+          margin-left: -70px;
+          font-size: 20px;
+      }
+      .footer p {
+          width: 50%;
+          font-size: 13px;
+          margin-left: -20px;
+
+      }
+       .links{
+        margin-left: 50%;
+        margin-top: -25%;
+        
+       }
+       .social-icons{
+        margin-top: 20px;
+        padding-left: 50%;
+        margin-bottom: 5%;
+        margin-left: -50%;
+       }
+       
+       .social-icons h2{
+        text-align: center;
+        margin-left: 0;
+        font-size: 20px;
+       }
+       .social-icons a i{
+        font-size: 25px;
+       }
+        hr{
+        margin-top: 60px;
+       }
+
+            
+      }
