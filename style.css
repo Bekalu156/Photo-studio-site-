@@ -642,6 +642,70 @@ button {
   opacity: 0;
 }
 
+.cards5{
+    position: absolute;
+    width: 60%;
+    height: 50%;
+    background: url(img/Enchanting\ Beach\ Weddings_\ Ideas\ To\ Make\ Your\ Special\ Day\ Unforgettable.jpeg);
+    border-radius: 20px;
+    z-index: 5;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    
+    color: #ffffff;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.5) 0px 18px 36px -18px inset;
+    display: none;
+}
+
+.cards5 img {
+    width: 95%;
+    height: 95%;
+    border-radius: 20px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.cards5 .h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.cards5 .content .h3 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.cards5 .content p {
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+.cards5 .content {
+  transform: translateY(100%);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.cards5:hover .content {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.cards5:hover .h4 {
+  opacity: 0;
+}
 .portfolio{
     max-width: 800px;
     margin: 0 auto;
@@ -1583,6 +1647,7 @@ nav li {
           width: 170%;
           height: 170%;
           margin-left: 50px;
+          display: none;
         }
         .services .cards img{
             width: 170%;
@@ -1593,6 +1658,7 @@ nav li {
             top: 0;
             left: 0;
             z-index: -1;
+            display: none;
         }
             
         .services .cards2{
@@ -1613,6 +1679,10 @@ nav li {
             margin-top: 190%;
             width: 60%;
             height: 50%;
+        }
+
+        .services .cards5{
+          display: block;
         }
 
         .portfolio{
@@ -1741,3 +1811,6 @@ nav li {
 
             
       }
+
+      
+
